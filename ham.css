@@ -503,4 +503,7 @@ header nav ul {
 .form-group textarea{
     height: 200px;
 }
+.ultima footer p {
+    padding-left: 0px;
+}
 }
