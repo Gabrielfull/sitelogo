@@ -36,6 +36,7 @@ body {
    padding-top: 15px;
    padding-bottom: 20px; 
    justify-content: space-between;
+   border-bottom: 0.3px solid rgba(0, 0, 0, 0.150);
 }
 .cabecalho header h1 a {
     font-size: 1em;
@@ -391,23 +392,20 @@ div.full {
 
 }
 @media (max-width: 930px){
-    .menu {
+    .cabecalho {
         bottom: 0;
         text-align: center;
-        background-color: rgb(255, 255, 255);
+        display: none;
     }
-    .cabecalho, .cabecalho ul {
+    .cabecalho header {
+        border-bottom: none;
+    }
+    .menu, .menu ul {
         flex-direction: column;
         justify-content: center;
     }
-    .cabecalho {
-        height: 100vh;
-    }
     .menu {
-        display: none;
-    }
-    header {
-        display: none;
+        height: 100vh;
     }
     .close-menu {
         position: fixed;
@@ -431,7 +429,7 @@ div.full {
         color: white;
         transition-duration: 0.5s;
     }
-    .close-menu:checked~.menu{
+    .close-menu:checked~.cabecalho{
         display: block;
 }
 .close-menu:checked~.close-menu-label::after {
@@ -440,10 +438,13 @@ div.full {
     font-size: 20px;
     transition-duration: 0.5s;
 }
-.cabecalho header {
+.menu header {
     display: block;
     text-align: center;
    padding-top: 100px; 
+}
+.menu-spacing {
+    display: none;
 }
 .cabecalho header h1 {
     display: block;
@@ -454,7 +455,7 @@ div.full {
     padding-bottom: 30px;
     display: none;
 }
-.cabecalho header h2 {
+.menu header h2 {
     display: block;
     padding-bottom: 19px;
     font-size: 2.6em;

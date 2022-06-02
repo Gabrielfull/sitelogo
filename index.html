@@ -10,13 +10,14 @@
 <body>
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <asside class="menu">
         <section class="cabecalho">
+            <asside class="menu">
             <header>
                 <h1><a href="#conteudo">Logo!</a></h1>
                 <h2>Menu</h2>
                 <nav>
-                    <ul>
+                    <ul class="menu-list"
+                    onclick="getElementById('close-menu').checked = false;">
                         <li><a href="#intro">Intro</a></li>
                         <li><a href="#terceirapart">Top3 Jobs</a></li>
                         <li><a href="#galery">Gallery</a></li>
@@ -27,8 +28,9 @@
                     </ul>
                 </nav>
             </header>
-        </section>
         </asside>
+        </section>
+        <div class="menu-spacing"></div>
         <section id="conteudo">
             <div class="main">
                 <div class="primeirotext">
