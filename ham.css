@@ -112,21 +112,22 @@ header nav ul li a:hover {
     height: auto;
 }
 #intro {
-    display: grid;
     background-color: white;
-    padding-bottom: 30px;
     text-align: center;
+
+}
+.textintro {
+    padding: 30px 290px;
 }
 #intro h2 {
-    padding-top: 30px;
     font-weight: 900;
     font-size: 3.6em;
     font-family: var(--opensans);
     color: #0A1128;
 }
 #intro p {
-    display: grid;
     padding-top: 45px;
+    margin-bottom: 2rem;
     font-size: 1.3em;
     font-family: var(--opensans);
     line-height: 1.4em;
@@ -160,8 +161,9 @@ header nav ul li a:hover {
     align-items: center;
     font-family: var(--montserrat);
     text-align: justify;
-    gap: 80px;
-    flex-wrap: wrap;
+    gap: 100px;
+    padding: 0px 130px
+   
 }
 .numeros h3 {
     font-size: 3.5em;
@@ -174,6 +176,7 @@ header nav ul li a:hover {
     line-height: 1.6em;
     max-width: 100%;
     height: auto;
+    text-align: justify;
 }
 #galery{
     display: flex;
@@ -213,24 +216,27 @@ header nav ul li a:hover {
 }
 #pricing {
     background-color: white;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 30px;
     text-align: center;
-
 }
+.pricingtext {
+    padding: 0px 280px
+}
+
 .pricingtext h2{
     font-size: 3.6em;
     font-weight: 800;
     text-transform: uppercase;
     font-family: var(--montserrat);
     color: #0A1128;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
 }
 .pricingtext p{
     font-family: var(--montserrat);
-    padding-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.6em;
+    margin-bottom: 30px;
 }
 #tabela {
     background-color: white;
@@ -239,7 +245,7 @@ header nav ul li a:hover {
 table {
     border-collapse: collapse;
     margin: auto;
-    width: 600px;
+    width: 565px;
     height: 250px;
     font-family: var(--montserrat);
 }
@@ -391,7 +397,7 @@ div.full {
     padding: 15px;
 
 }
-@media (max-width: 930px){
+@media (max-width: 950px){
     .cabecalho {
         bottom: 0;
         text-align: center;
@@ -478,11 +484,30 @@ header nav ul {
     font-family: var(--opensans);
     line-height: 1.4em;
 }
+.textintro {
+    max-width: 130rem;
+    padding: 30px 10px;
+}
 .tops{
     padding-left: 14px;
 }
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--montserrat);
+    text-align: justify;
+    gap: 20px;
+    padding: 30px 10px;
+    flex-flow: column wrap;
+   
+}
 .galerytext {
     padding-left: 6px;
+}
+.pricingtext {
+    max-width: 130rem;
+    padding: 0px 30px
 }
 .pricingtext p {
     font-size: 1.1em;
