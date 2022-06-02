@@ -507,4 +507,7 @@ header nav ul {
     padding-left: 0px;
     font-size: 1.2em;
 }
+.galeryimg {
+    gap: 13px;
+}
 }
