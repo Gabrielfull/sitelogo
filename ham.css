@@ -1,8 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 html {
     scroll-behavior: smooth;
@@ -18,7 +17,6 @@ body {
     background-image: url(endless-constellation\ \(1\).png);
     background-position: center center;
     background-size: cover;
-
 }
 .menu {
     background-color: white;
@@ -85,7 +83,6 @@ header nav ul li a:hover {
     text-transform: uppercase;
     color: white;
     font-family: var(--opensans);
-
 }
 .primeirotext h1 {
     padding-top: 150px;
@@ -114,7 +111,6 @@ header nav ul li a:hover {
 #intro {
     background-color: white;
     text-align: center;
-
 }
 .textintro {
     padding: 30px 290px;
@@ -132,51 +128,52 @@ header nav ul li a:hover {
     font-family: var(--opensans);
     line-height: 1.4em;
 }
-#terceirapart {
-    padding-top: 60px;
-    padding-bottom: 80px;
-    color: white;
+.terceirapart {
+   color: white;
+   padding: 70px 117px;
+   font-family: var(--montserrat);
 }
-.tops {
-    display: grid;
-    padding-bottom: 90px;
-    font-size: 2.4em;
-    font-family: var(--montserrat);
-    padding-left: 100px;
-}
-.tops h2 {
-    font-weight: 900;
-    max-width: 100%;
-    height: auto;
-}
-.tops p {
-    font-size: 0.5em;
-    padding-top: 15px;
-    max-width: 100%;
-    height: auto;
-}
-.numeros {
+.grid-one-content {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-    font-family: var(--montserrat);
-    text-align: justify;
-    gap: 100px;
-    padding: 0px 130px
-   
 }
-.numeros h3 {
+.terceirapart h2 {
+    margin-bottom: 10px;
+    font-weight: 900;
     font-size: 3.5em;
-    max-width: 100%;
-    height: auto;
 }
-.numeros p {
-    padding-top: 10px;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    max-width: 100%;
-    height: auto;
-    text-align: justify;
+.terceirapart .legenda {
+    margin-bottom: 80px;
+    font-size: 1.3em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  font-size: 1.4em;
+  counter-reset: grid-counter;
+  flex-flow: column wrap;
+}
+.grid h3 {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding-left: 80px;
+    padding-bottom: 2rem;
+}
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 4.7rem;
+    font-style: italic;
+    top: -2.2rem;
+    left: 0px;
+    transform: rotate(7deg);
+}
+.grid p {
+    line-height: 1.4em;
 }
 #galery{
     display: flex;
@@ -488,19 +485,39 @@ header nav ul {
     max-width: 130rem;
     padding: 30px 10px;
 }
-.tops{
-    padding-left: 14px;
-}
-.numeros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.terceirapart {
+    color: white;
+    padding: 40px 40px;
     font-family: var(--montserrat);
-    text-align: justify;
-    gap: 20px;
-    padding: 30px 10px;
-    flex-flow: column wrap;
-   
+}
+.grid h3 {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding-left: 70px;
+    padding-bottom: 2rem;
+}
+.grid {
+    display: block;
+    gap: 0px;
+    font-size: 1.4em;
+    counter-reset: grid-counter;
+}
+.grid article {
+    padding-bottom: 50px;
+}
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 4.3rem;
+    font-style: italic;
+    top: -2.2rem;
+    left: -7px;
+    transform: rotate(6deg);
+}
+.grid p {
+    line-height: 1.em;
 }
 .galerytext {
     padding-left: 6px;
