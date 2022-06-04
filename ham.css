@@ -13,6 +13,9 @@ html {
     --primeiracor: #0A1129;
     --segundacor: white;
 }
+a {
+    text-decoration: none;
+}
 body {
     background-image: url(endless-constellation\ \(1\).png);
     background-position: center center;
@@ -218,7 +221,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 .pricingtext {
-    padding: 0px 280px
+    padding: 0px 320px
 }
 
 .pricingtext h2{
@@ -388,6 +391,16 @@ div.full {
     text-align: center;
     font-size: 1.4em;
     font-family: monospace;
+}
+.ultima footer p a {
+    color: black;
+}
+.ultima footer p a:hover {
+    text-decoration: underline;
+
+}
+.ultima footer p a:active {
+    color: red;
 }
 .seta {
     display: flex;
